@@ -6,23 +6,23 @@ This project aims to build a predictive model to classify SMS messages as either
 
 ### Files
 
-1. **extract_data.py**
+1. **Extract_data.py**
    - Contains the function `extract_data` which extracts the SMS Spam Collection dataset from a ZIP file.
    - The path to the ZIP file and the extraction directory are provided as arguments.
 
-2. **preprocess_data.py**
+2. **Preprocess_data.py**
    - Contains the function `preprocess_data` which handles data cleaning and text preprocessing.
    - Removes punctuation, converts text to lowercase, and splits the data into training and testing sets.
 
-3. **train_model.py**
+3. **Train_model.py**
    - Contains the function `train_and_evaluate_model` which trains and evaluates machine learning models.
    - Uses TF-IDF vectorization, trains Multinomial Naive Bayes and Logistic Regression models, performs hyperparameter tuning, and evaluates performance metrics.
 
-4. **deep_learning_model.py**
+4. **Deep_learning_model.py**
    - Contains the function `build_and_evaluate_dl_model` which builds and trains a deep learning model using LSTM.
    - Tokenizes and pads text sequences, builds an LSTM-based model, trains the model, and evaluates its performance.
 
-5. **main.py**
+5. **Main.py**
    - The main script that integrates all the modules.
    - Extracts the dataset, preprocesses the data, trains and evaluates machine learning models, and builds and evaluates the deep learning model.
    - Paths to the dataset files and ZIP file are hardcoded in this script and should be adjusted as necessary.
